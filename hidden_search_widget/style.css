@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #785cf4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.user_input,
+.search_btn {
+  padding: 0.5rem;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+.user_input {
+  display: none;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+.show {
+  opacity: 1;
+  display: block;
+}
+
+.search_btn {
+  font-size: 1rem;
+  cursor: pointer;
+}
